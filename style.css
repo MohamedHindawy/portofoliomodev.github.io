@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+.logo{
+    text-decoration: none;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.navigation a {
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: rgb(240, 97, 116);
+}
+section {
+    padding: 100px 300px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url('images/bg3.jpg') no-repeat;
+    background-size: cover;
+    background-position:right center;
+    background-attachment: fixed;
+}
+.main h2{
+    color:#ffff;
+    font-size:  1.4em;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;       
+}
+.main h2 span{
+    display: inline-block;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 3em;
+    color: rgb(163, 74, 104);
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);       
+
+}
+.main h3 {
+    
+    color:#ffff;
+    font-size:  1.4em;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;       
+    letter-spacing: 1px;
+}
+.main-btn {
+    text-decoration:none ;
+    color: #ffff;
+    background-color:rgb(163, 74, 104) ;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    margin-bottom: 45px;
+    margin-top: 20px;
+    transition: 0.4s ease;
+}
+.main-btn:hover{
+    background-color: rgb(236, 139, 171);
+    transform: scale(1.05);
+}
+.social-icons a{
+    display: inline-block;
+    color: #ffff;
+    font-size: 1.7em;
+    padding-right: 20px;
+    padding-left: 10px;
+    transition: 0.4s ease;
+}
+.social-icons a {
+    transform: scale(1.05);
+}
+
+   .title{
+    display: flex;
+    justify-content: center;
+    color: rgb(247, 66, 126);
+    text-shadow: -1px 0 rgb(247, 240, 240), 0 1px rgb(248, 248, 248), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);       
+    font-size: xx-large;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+#projects .projectcontainer .line{
+    border: 0.5px solid;
+        width: 25%;
+
+}
+.services-section{
+    background: url('images/bg.jpg');
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .section-title{
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .border{
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+  }
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    color: #82ccdd;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  .service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  .service-box:hover .service-icon{
+    background: #82ccdd;
+    color: #ddd;
+  }
+  .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .service-desc{
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .service-box{
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .service-box{
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box{
+      max-width: 100%;
+    }
